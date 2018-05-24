@@ -1,0 +1,10 @@
+@charset "utf-8";
+body {
+  background-color: blue;
+}
+.ok {
+  border: 1px solid #000000;
+}
+header {
+  background-color: pink;
+}

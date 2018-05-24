@@ -1,0 +1,102 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,li {
+    list-style: none;
+}
+
+@b_w: 1200px;
+@pink: pink;
+@green: green;
+@imgurl: "http://www.sinaimg.cn/dy/slidenews/21_img/2016_49/";
+.w(@p_w: @b_w) {
+    margin: 0 auto;
+    width: @p_w;
+}
+
+.a_all(@pdtop: 10px) {
+    text-align: center;
+    display: block;
+    padding: @pdtop 0;
+    text-decoration: none;
+}
+
+/*不显示的混合*/
+.font_s() {
+    font-family: "arial, helvetica, sans-serif,";
+    line-height: 50px;
+    color: red;
+}
+
+
+/*带参数混合*/
+
+.border(@color) {
+    border: 1px solid @color;
+}
+
+
+/*带选择器混合*/
+
+.minx-btn() {
+    &:hover {
+        .border(@green);
+        background-color: @pink;
+    }
+}
+
+header {
+    .w();
+    background: url("@{imgurl}41065_5457591_257910.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.mian {
+    .w();
+    min-height: 1500px;
+    .con-c {
+        width: 500px;
+        li {
+            border: 1px solid blue;
+            margin-bottom: 15px;
+        }
+        a {
+            .a_all(30px);
+            .minx-btn;
+        }
+    }
+    .c-title {
+        h2 {
+            .font_s;
+            font-size: 30px;
+        }
+        h3 {
+            .font_s;
+            font-size: 25px;
+        }
+        button {
+            .minx-btn;
+        }
+        h4 {
+            .font_s;
+            .minx-btn;
+        }
+    }
+}
+
+
+/*属性值*/
+
+@kuaidu: width;
+.@{kuaidu} {
+    @{kuaidu}: 500px
+}
+
+footer {
+    .w();
+    background: @green;
+}

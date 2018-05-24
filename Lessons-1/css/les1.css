@@ -1,0 +1,75 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+/*不显示的混合*/
+/*带参数混合*/
+/*带选择器混合*/
+header {
+  margin: 0 auto;
+  width: 1200px;
+  background: url("http://www.sinaimg.cn/dy/slidenews/21_img/2016_49/41065_5457591_257910.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.mian {
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 1500px;
+}
+.mian .con-c {
+  width: 500px;
+}
+.mian .con-c li {
+  border: 1px solid blue;
+  margin-bottom: 15px;
+}
+.mian .con-c a {
+  text-align: center;
+  display: block;
+  padding: 30px 0;
+  text-decoration: none;
+}
+.mian .con-c a:hover {
+  border: 1px solid green;
+  background-color: pink;
+}
+.mian .c-title h2 {
+  font-family: "arial, helvetica, sans-serif,";
+  line-height: 50px;
+  color: red;
+  font-size: 30px;
+}
+.mian .c-title h3 {
+  font-family: "arial, helvetica, sans-serif,";
+  line-height: 50px;
+  color: red;
+  font-size: 25px;
+}
+.mian .c-title button:hover {
+  border: 1px solid green;
+  background-color: pink;
+}
+.mian .c-title h4 {
+  font-family: "arial, helvetica, sans-serif,";
+  line-height: 50px;
+  color: red;
+}
+.mian .c-title h4:hover {
+  border: 1px solid green;
+  background-color: pink;
+}
+/*属性值*/
+.width {
+  width: 500px;
+}
+footer {
+  margin: 0 auto;
+  width: 1200px;
+  background: green;
+}
